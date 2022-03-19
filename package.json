@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "@types/faker": "5.5.9",
     "@types/styled-components": "^5.1.24",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
@@ -56,6 +57,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "faker": "5.5.3",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "2.6.0"
