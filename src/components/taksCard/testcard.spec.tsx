@@ -33,7 +33,7 @@ describe('TaksCard', () => {
     const deleteTask = jest.fn()
 
     makeSut({ deleteTask })
-    const deleteButton = screen.getByTitle('delete')
+    const deleteButton = screen.getByText('delete')
 
     act(() => {
       userEvent.click(deleteButton)
