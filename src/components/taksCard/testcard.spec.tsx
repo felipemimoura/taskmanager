@@ -8,12 +8,16 @@ import userEvent from '@testing-library/user-event'
 type SutParams = {
   title?: string
   deleteTask?(): void
+  saveTask?(): void
 }
 const makeSut = ({
   title = faker.random.words(2),
-  deleteTask = jest.fn()
+  deleteTask = jest.fn(),
+  saveTask = jest.fn()
 }: SutParams) => {
-  render(<TaksCard title={title} deleteTask={deleteTask} />)
+  render(
+    <TaksCard title={title} onDeleteTask={deleteTask} onSaveTask={saveTask} />
+  )
 }
 
 describe('TaksCard', () => {
@@ -40,5 +44,18 @@ describe('TaksCard', () => {
     })
 
     expect(deleteTask).toBeCalled()
+  })
+
+  it('call save button was clicked', () => {
+    const saveTask = jest.fn()
+
+    makeSut({ saveTask })
+    const saveButton = screen.getByText('salvar')
+
+    act(() => {
+      userEvent.click(saveButton)
+    })
+
+    expect(saveTask).toBeCalled()
   })
 })
