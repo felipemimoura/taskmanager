@@ -2,6 +2,8 @@
 
 O taskmanager é um MVP de um gerenciador de tarefas, onde o usuário pode cadastrar novas tarefas, visualizar todas a tarefas pendentes, todas as tarefas em execução, todas as tarefas concluidas
 
+O projeto pode ser acessado pela seguinte url [TASKMANAGER](https://taskmanagernew.vercel.app/)
+
 
 
 ## 🚀 Começando
