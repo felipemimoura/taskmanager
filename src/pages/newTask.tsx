@@ -48,9 +48,9 @@ const Newtask: React.FC = () => {
           >
             <option defaultValue="pending">Pendente</option>
 
-            <option defaultValue="progress">Executando</option>
+            <option value="progress">Executando</option>
 
-            <option defaultValue="done">Concluido</option>
+            <option value="done">Concluido</option>
           </select>
           <button type="submit">cadastar</button>
         </form>
