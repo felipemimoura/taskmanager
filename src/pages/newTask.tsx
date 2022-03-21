@@ -40,7 +40,7 @@ const Newtask: React.FC = () => {
             type="text"
             placeholder="Digite o nome da nova tarefa"
             onChange={(event) => setTitle(event.target.value)}
-            defaultValue={title}
+            value={title}
           />
           <select
             id="status"
