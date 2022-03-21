@@ -9,7 +9,7 @@ const TaskPending: React.FC = () => {
   const [taskPending, setTaskPending] = useState<Task[]>([])
 
   useEffect(() => {
-    const task = tasks.filter((taskDone) => taskDone.taskStatus === 'progress')
+    const task = tasks.filter((taskDone) => taskDone.taskStatus === 'pending')
 
     setTaskPending(task)
   }, [tasks])
