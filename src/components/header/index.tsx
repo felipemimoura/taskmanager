@@ -1,14 +1,14 @@
 import React from 'react'
-import { HeaderProps } from './interface'
+import { Link } from 'react-router-dom'
 import * as Styled from './styles'
 
-const Header: React.FC<HeaderProps> = ({ onOpenNewTransacitonModal }) => {
+const Header: React.FC = () => {
   return (
     <Styled.Container>
       <Styled.Content>
         <h1>TaskManager</h1>
-        <button type="button" onClick={onOpenNewTransacitonModal}>
-          Nova Tarefa
+        <button type="button">
+          <Link to="/newTaks">Nova Tarefa</Link>
         </button>
       </Styled.Content>
     </Styled.Container>

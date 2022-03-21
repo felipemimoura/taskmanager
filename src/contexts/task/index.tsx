@@ -5,9 +5,13 @@ const TaskContext = createContext<ContextData>({} as ContextData)
 
 const TaskProvider: React.FC = ({ children }) => {
   const [tasks, setTasks] = useState<Task[]>([])
-  const handleAddTask = useCallback((task: Task) => {
-    setTasks((state) => ({ ...state, task }))
-  }, [])
+
+  const handleAddTask = useCallback(
+    (task: Task) => {
+      setTasks([...tasks, task])
+    },
+    [tasks]
+  )
 
   const handleDeleteTask = useCallback(
     (id: number) => {

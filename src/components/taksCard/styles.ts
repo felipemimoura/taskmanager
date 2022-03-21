@@ -5,26 +5,35 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 1.6rem;
 
-  padding: 1.6rem;
+  padding: 2.4rem;
 
   border-radius: 0.8rem;
-  background-color: var(--white);
+  background-color: var(-gray-900);
+  border: 0.4rem solid var(--pink-800);
 `
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+
+  h1 {
+    color: var(--white);
+  }
 `
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.6rem;
 
   label {
     font-size: 1.6rem;
+    color: var(--white);
   }
+`
 
-  select {
-    width: 100%;
-  }
+export const Content = styled.div`
+  display: flex;
+  gap: 0.8rem;
 `

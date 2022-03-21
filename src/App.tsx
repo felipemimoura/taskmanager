@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { BrowserRouter } from 'react-router-dom'
 import Header from './components/header'
 import { TaskProvider } from './contexts/task'
@@ -9,8 +10,9 @@ function App() {
   return (
     <BrowserRouter>
       <TaskProvider>
-        <Header onOpenNewTransacitonModal={() => console.log('oi')} />
+        <Header />
         <Router />
+
         <GlobalStyles />
       </TaskProvider>
     </BrowserRouter>

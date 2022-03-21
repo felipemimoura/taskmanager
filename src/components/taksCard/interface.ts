@@ -1,5 +1,5 @@
+import { Task } from '../../contexts/task/interace'
+
 export interface TaskCardProps {
-  title: string
-  onDeleteTask: () => void
-  onSaveTask: () => void
+  taskCard: Task
 }

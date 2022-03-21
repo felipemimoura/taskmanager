@@ -28,12 +28,31 @@ export const GlobalStyles = createGlobalStyle`
 
   }
 
+  input, select {
+    padding: 0.8rem;
+
+  }
+
   h1, h2, h3, h4,h5,strong{
     font-weight: 600;
   }
 
   button {
     cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--pink-800);
+    border: 0;
+    padding: 1rem;
+    border-radius: 0.8rem;
+
+    border: 1px solid var(--pink-800);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 
   a {
@@ -68,6 +87,14 @@ export const GlobalStyles = createGlobalStyle`
       }
 
     }
+  }
+
+  .formAddClass  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    width: 500px;
   }
 
 `

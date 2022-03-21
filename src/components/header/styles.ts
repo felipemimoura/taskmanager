@@ -30,6 +30,10 @@ export const Content = styled.div`
 
     transition: filter 0.2s;
 
+    a {
+      color: var(--white);
+    }
+
     &:hover {
       filter: brightness(0.8);
     }
