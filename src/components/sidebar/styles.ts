@@ -8,7 +8,7 @@ export const Links = styled(Link)`
   transition: all 0.2s;
 
   &:hover {
-    color: #d53f8c;
+    color: var(--pink-800);
   }
 `
 export const Container = styled.div`
@@ -18,11 +18,11 @@ export const Container = styled.div`
 
   padding: 1.6rem;
   height: calc(100vh - 2.4rem);
-  border-right: 1px solid #d53f8c;
+  border-right: 1px solid var(--pink-800);
 `
 export const Title = styled.h2`
   font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
-  color: #b83280;
+  color: var(--pink-800);
 `
