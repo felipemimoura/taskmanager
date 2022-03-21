@@ -19,7 +19,7 @@ const TaskPending: React.FC = () => {
       <Siderbar title="Tarefas" />
       <div className="wrapper">
         <h2 className="title">
-          Você possui {`${taskPending.length}`} em progresso
+          Você possui {`${taskPending.length}`} pendentes
         </h2>
         <div className="taskContainer">
           {taskPending.map((task) => {
